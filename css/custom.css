@@ -1,13 +1,11 @@
 /********DEFAULT STYLES************/
 body {
-  background-color: #ffe6e6;
+  background-color: #FEE8D6;
   font-size: 100%;
 }
-.callOutNumber {
-  font-size: 3em;
-  font-weight: 600;
 
-}
+
+/***NAVBAR DEFAULT STYLES***/
 .navbar-brand {
   width: 20em;
   height: auto;
@@ -21,20 +19,26 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 }
-
+#navbarMain {
+  position: relative;
+}
 
 #navNav > li {
   text-align: center;
-  padding-top: 1em;
-
 }
 #navNav > li > a {
   text-align: center;
+  color: white;
 }
+#navNav > li > a:hover {
+  color: red;
+}
+
 
 #navNav > li.dropdown.open > ul {
   background-color: #080808;
   border-top: 0;
+  margin-top: .6em;
 }
 #navNav > li.dropdown.open > ul > li > a {
   margin-top: 1em;
@@ -42,20 +46,92 @@ body {
   color: white;
 }
 
+#navNav > li.dropdown.open > ul > li:hover {
+
+}
+
+#navNav > li.dropdown.open > ul > li > a:hover {
+  color:#CC3300;
+  background-color: #080808;
+}
+
+.glyphicon-menu-hamburger {
+  color: #CC3300;
+}
+.navbar-toggle {
+  margin-top: .9em;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:visited {
+  background-color: white;
+}
+/***NAVBAR DEFAULT STYLES END***/
+
+.callOutRow {
+  margin-top: 2em;
+}
+.callOutNumber {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  display: block;
+}
+
+a.callOutNumber:hover {
+  text-decoration: none;
+  color:red;
+}
+
 /* ===== == = === <20em (<320px) === = == ===== */
 
 @media only screen and (max-width : 20em) {
-
+  #navNav > li.dropdown.open > ul {
+    width: 100%;
+  }
+  #navNav > li {
+  margin-top: .5em;
+  }
+  .navbar-brand {
+    width: 10.5em;
+  }
+  .navbar-brand > img {
+      padding-top: 1em;
+  }
+  .titleCallOut {
+  display: none;
+  }
+  .callOutNumber {
+    font-size: 2em;
+  }
 }
 
 /* ===== == = === 20em (320px) === = == ===== */
 
 @media only screen and (min-width : 20em) {
+  #navNav > li.dropdown.open > ul {
+    width: 100%;
+  }
+  .navbar-brand {
+    width: 12em;
+  }
+  .navbar-brand > img {
+      padding-top: 1em;
+  }
+
+  .titleCallOut {
+  display: none;
+  }
 }
 
 /* ===== == = === 30em (480px) === = == ===== */
 
 @media only screen and (min-width : 30em) {
+  .navbar-brand {
+    width: 16em;
+  }
 }
 
 /* ===== == = === 37.5em (600px) === = == ===== */
@@ -66,12 +142,50 @@ body {
 /* ===== == = === 48em (768px) ===BREAKPOINT = == ===== */
 
 @media only screen and (min-width : 48em) {
+
+  .navbar-brand > img {
+      padding-top: 1.7em;
+  }
+  #navNav > li.dropdown.open > ul {
+    width: auto;
+  }
   .navbar-brand {
     width: 12em;
   }
-  .navbar-brand > img {
-      padding-top: 1em;
+
+  #navNav > li {
+  margin-top: 1.3em;
+}
+
+.titleCallOut {
+  display: block;
+  text-align: right;
+  margin-right: 2em;
+  font-size: 1.5em;
+  font-weight: 600;
+
+}
+#navNav {
+  margin-right: 2.0em;
+}
+.titleCallOut {
+  margin-right: .2em;
+}
+
+.callOutNumber {
+  font-size: 1.5em;
+}
+
+} /**END 768px breakpoint**/
+
+/* ===== == = === 52.5em (840px) === = == ===== */
+
+@media only screen and (min-width : 52.5em) {
+
+  .titleCallOut {
+    margin-right: 2em;
   }
+
 }
 
 /* ===== == = === 56.25em (900px) === = == ===== */
@@ -80,20 +194,22 @@ body {
   .navbar-brand {
     width: 12em;
   }
-  .navbar-brand > img {
-      padding-top: 1em;
+  #navNav {
+    margin-right: 4em;
   }
-
 }
 /* ===== == = === 62em (992px) === = == ===== BOOTSTRAP DEFAULT*/
 
-@media only screen and (min-width : 60em) {
+@media only screen and (min-width : 62em) {
 
 .navbar-brand {
-  width: 12em;
+  width: 16em;
 }
 .navbar-brand > img {
     padding-top: 1em;
+}
+#navNav > li {
+margin-top: 1.5em;
 }
 }
 
@@ -104,29 +220,27 @@ body {
     width: 20em;
   }
   #navNav > li > a {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
   }
-  #navNav {
-    margin-right: 1em;
-  }
+
 }
 
 /* ===== == = === 75em (1200px) === = == ===== */
 
 @media only screen and (min-width : 75em) {
   #navNav > li > a {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
   }
-  #navNav {
-    margin-right: 1em;
-  }
+
 }
 
 /* ===== == = === 81.25em (1300px) === = == ===== */
 
 @media only screen and (min-width : 81.25em) {
+
+
 }
 
 
