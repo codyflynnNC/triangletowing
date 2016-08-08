@@ -1,0 +1,95 @@
+/********DEFAULT STYLES************/
+body {
+  background-color: #ffe6e6;
+  font-size: 100%;
+}
+.callOutNumber {
+  font-size: 3em;
+  font-weight: 600;
+
+}
+.navbar-brand {
+  width: 20em;
+  height: auto;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-left: 1.5em;
+}
+.navbar-brand > img {
+    max-height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+#navNav > li {
+  text-align: center;
+  padding-top: 1em;
+
+}
+#navNav > li > a {
+  text-align: center;
+}
+
+#navNav > li.dropdown.open > ul {
+  background-color: #080808;
+  border-top: 0;
+}
+#navNav > li.dropdown.open > ul > li > a {
+  margin-top: 1em;
+  text-align: center;
+  color: white;
+}
+
+/* ===== == = === <20em (<320px) === = == ===== */
+
+@media only screen and (max-width : 20em) {
+
+}
+
+/* ===== == = === 20em (320px) === = == ===== */
+
+@media only screen and (min-width : 20em) {
+}
+
+/* ===== == = === 30em (480px) === = == ===== */
+
+@media only screen and (min-width : 30em) {
+}
+
+/* ===== == = === 37.5em (600px) === = == ===== */
+
+@media only screen and (min-width: 37.5em) {
+}
+
+/* ===== == = === 48em (768px) === = == ===== */
+
+@media only screen and (min-width : 48em) {
+}
+
+/* ===== == = === 56.25em (900px) === = == ===== */
+
+@media only screen and (min-width : 56.25em) {
+}
+
+/* ===== == = === 68.75em (1100px) === = == ===== */
+
+
+
+/* ===== == = === 75em (1200px) === = == ===== */
+
+@media only screen and (min-width : 75em) {
+  #navNav > li > a {
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #navNav {
+    margin-right: 1em;
+  }
+}
+
+/* ===== == = === 81.25em (1300px) === = == ===== */
+
+@media only screen and (min-width : 81.25em) {
+}
