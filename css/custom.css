@@ -17,6 +17,7 @@ body {
 }
 .navbar-brand > img {
     max-height: auto;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -62,25 +63,59 @@ body {
 @media only screen and (min-width: 37.5em) {
 }
 
-/* ===== == = === 48em (768px) === = == ===== */
+/* ===== == = === 48em (768px) ===BREAKPOINT = == ===== */
 
 @media only screen and (min-width : 48em) {
+  .navbar-brand {
+    width: 12em;
+  }
+  .navbar-brand > img {
+      padding-top: 1em;
+  }
 }
 
 /* ===== == = === 56.25em (900px) === = == ===== */
 
 @media only screen and (min-width : 56.25em) {
+  .navbar-brand {
+    width: 12em;
+  }
+  .navbar-brand > img {
+      padding-top: 1em;
+  }
+
+}
+/* ===== == = === 62em (992px) === = == ===== BOOTSTRAP DEFAULT*/
+
+@media only screen and (min-width : 60em) {
+
+.navbar-brand {
+  width: 12em;
+}
+.navbar-brand > img {
+    padding-top: 1em;
+}
 }
 
 /* ===== == = === 68.75em (1100px) === = == ===== */
 
-
+@media only screen and (min-width : 68.75em) {
+  .navbar-brand {
+    width: 20em;
+  }
+  #navNav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #navNav {
+    margin-right: 1em;
+  }
+}
 
 /* ===== == = === 75em (1200px) === = == ===== */
 
 @media only screen and (min-width : 75em) {
   #navNav > li > a {
-
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -93,3 +128,12 @@ body {
 
 @media only screen and (min-width : 81.25em) {
 }
+
+
+
+
+/***override BS Queries***/
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
