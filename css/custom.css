@@ -111,7 +111,7 @@ body {
 }
 .content p a:hover {
   color:red;
-  
+
 }
 .content h1 {
   font-size: 1.5em;
@@ -181,10 +181,14 @@ margin-bottom: 1.5em;
   display: none;
   }
 
-
   body {
     background-color: white;
   }
+  .callOutRow a {
+    display: inherit;
+    margin-top: .3em;
+  }
+
 }
 
 /* ===== == = === 30em (480px) === = == ===== */
@@ -193,6 +197,10 @@ margin-bottom: 1.5em;
   .navbar-brand {
     width: 16em;
   }
+  .callOutRow a {
+    display: inline-block;;
+  }
+
 }
 
 /* ===== == = === 37.5em (600px) === = == ===== */
