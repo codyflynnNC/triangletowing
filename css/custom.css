@@ -144,6 +144,10 @@ margin-bottom: 1.5em;
   float: right;
 }
 
+legend {
+
+}
+
 /* ===== == = === <20em (<320px) === = == ===== */
 
 @media only screen and (max-width : 20em) {
@@ -189,6 +193,18 @@ margin-bottom: 1.5em;
     margin-top: .3em;
   }
 
+#success_message {
+  display: none;
+}
+legend {
+  margin-bottom: .5em;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 auto;
+  display: block;
+  width: auto;
+  margin-top: 1.5em;
+}
 }
 
 /* ===== == = === 30em (480px) === = == ===== */
@@ -314,9 +330,6 @@ margin-top: 1.5em;
 
 
 }
-
-
-
 
 /***override BS Queries***/
 @media(max-width:767px){}
