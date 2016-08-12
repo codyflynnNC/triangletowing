@@ -205,6 +205,10 @@ legend {
   width: auto;
   margin-top: 1.5em;
 }
+.glyphicon-send {
+  margin-left: .5em;
+}
+
 }
 
 /* ===== == = === 30em (480px) === = == ===== */
