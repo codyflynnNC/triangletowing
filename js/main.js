@@ -1,9 +1,54 @@
 $(function() {
   $("#header").load("header.html");
-  $("#testphp").load("test.php");
+  $("#footer").load("footer.html");
 });
 
+
+window.onload = function() {
+var location = new GMaps({
+    div: '#map',
+    lat: 35.7651663,
+    lng: -78.6292712,
+    zoom: 9
+  });
+  location.setOptions(
+    {
+      draggable: false
+    });
+
+
+  location.addMarker({
+    lat: 35.8051663,
+    lng: -78.6292712,
+    title: 'Click to see Triangle Towing Service\'s google maps page.',
+    click: function(e) {
+      var win = window.open('http://stackoverflow.com/', '_blank');
+if (win) {
+   //Browser has allowed it to be opened
+   win.focus();
+} else {
+   //Browser has blocked it
+   alert('A popup blocker has blocked this link. If you would like to visit anyways please go here www.google.com');
+}
+    }
+  });
+
+/*
+  Circle = location.drawCircle({
+    lat: 35.8165686,
+    lng: -78.6459253,
+    radius: 8000,  //350 meters
+    strokeColor: '#000',
+    strokeOpacity: 1,
+    strokeWeight: 2,
+    fillColor: '#EEE',
+    fillOpacity: 0.5
+  }); */
+
+};
+
 $(document).ready(function() {
+
   $(".content").on("click", "#alertButton", function() {
   console.log("we clicked the alert");
   $("#submitButton").css("display", "inline-block");
@@ -83,12 +128,12 @@ $(document).ready(function() {
                   }
               }
           },
-          comment: {
+          message: {
               validators: {
                     stringLength: {
-                      min: 10,
-                      max: 200,
-                      message:'Please enter at least 10 characters and no more than 200'
+                      min: 5,
+                      max: 500,
+                      message:'Please enter at least 5 characters and no more than 500'
                   },
                   notEmpty: {
                       message: 'Please supply a description of your project'
@@ -97,4 +142,4 @@ $(document).ready(function() {
               }
           }
        })
-      });
+     }); /*Document ready*/

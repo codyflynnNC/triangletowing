@@ -18,6 +18,7 @@ $(document).ready(function() {
                         $("#submitButton").css("display", "none");
                         $('.successMessages').html(alertBox);
                         $('#contact-form')[0].reset();
+                        $('#contact-form').data('bootstrapValidator').resetForm();
                     }
                 }
             });
