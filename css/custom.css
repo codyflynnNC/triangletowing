@@ -1,4 +1,4 @@
-/********DEFAULT STYLES************/
+/********DEFAULT STYLES********http://www.rastowing.com/****/
 body {
   background-color: #FEE8D6;
   font-size: 100%;
@@ -30,12 +30,17 @@ justify-content: center;
   font-weight: 600;
   padding-top: .2em;
   padding-bottom: .2em;
-  background-color: rgba(255, 0, 0, 0.5);
-  color: black;
+  background-color: rgb(200, 0, 0);
+  color: white;
 }
 .banner a {
-  color: black;
+  color: white;
 }
+
+.remove-padding {
+  padding: 0;
+}
+
 
 /***NAVBAR DEFAULT STYLES***/
 .navbar {
@@ -181,6 +186,7 @@ margin-bottom: 1.5em;
 /********* FOOTER ***************/
 footer {
   background-color: #333;
+  color: white;
 }
 
 
@@ -267,7 +273,7 @@ margin-top: .4em;
 
 /* ===== == = === <20em (<320px) === = == ===== */
 
-@media only screen and (max-width : 20em) {
+@media only screen and (min-width : 10em) {
   #navNav > li.dropdown.open > ul {
     width: 100%;
   }
@@ -283,11 +289,21 @@ margin-top: .4em;
   .callOutRow h1 {
   display: none;
   }
+
+  .nonmobile {
+    display: none;
+  }
+  .mobile {
+    display:block;
+  }
 }
 
 /* ===== == = === 20em (320px) === = == ===== */
 
 @media only screen and (min-width : 20em) {
+  .container {
+    width: 100%;
+  }
   #navNav > li.dropdown.open > ul {
     width: 100%;
   }
@@ -391,6 +407,14 @@ legend {
   margin-right: 3em;
 }
 
+.nonmobile {
+  display: block;
+}
+
+.mobile {
+  display:none;
+}
+
 } /**END 768px breakpoint**/
 
 /* ===== == = === 52.5em (840px) === = == ===== */
@@ -448,9 +472,8 @@ margin-top: 1.5em;
     padding-left: 1.8em;
     padding-right: 1.8em;
   }
-  .flex-end {
-    max-width: 1200px;
-    margin: 0 auto;
+  .container {
+    width: 1200px;
   }
 
 }
