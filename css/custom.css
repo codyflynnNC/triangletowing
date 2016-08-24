@@ -1,6 +1,6 @@
 /********DEFAULT STYLES********http://www.rastowing.com/****/
 body {
-  background-color: #FEE8D6;
+  background-color: #111;
   font-size: 100%;
 }
 p {
@@ -83,6 +83,16 @@ display: flex;
   color: white;
 }
 
+.white-background {
+  background-color: white;
+}
+
+.row {
+  margin-left: 0;
+}
+.dark-background {
+  background-color: #333;
+}
 
 .placeholdbox {
   padding: 1em;
@@ -110,6 +120,7 @@ font-size: 1.5em;
 /***NAVBAR DEFAULT STYLES***/
 .navbar {
   margin-bottom: 0;
+  background-color: #333;
 }
 .navbar-brand {
   width: 20em;
@@ -250,7 +261,6 @@ margin-bottom: 1.5em;
 
 /********* FOOTER ***************/
 footer {
-  background-color: #333;
   color: white;
 }
 
@@ -377,9 +387,7 @@ padding-left: .5em;
   display: none;
   }
 
-  body {
-    background-color: white;
-  }
+
   .callOutRow a {
     display: inherit;
     margin-top: .3em;
