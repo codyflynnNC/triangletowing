@@ -5,13 +5,21 @@ body {
 }
 p {
   line-height: 1.5em;
+  font-size: 2rem;
+}
+a {
+  font-size: 2rem;
+}
+h1 {
+}
+h2 {
 }
 
 h3 {
-  font-size: 1.25em;
-  font-weight: 500;
   margin-bottom: 1em;
 }
+
+
 
 .fa-facebook {
   color: #3b5998;
@@ -61,7 +69,21 @@ display: flex;
 .flex-item {
   margin-bottom: 1.5em;
 }
+.black-text {
+  color:black;
+}
+.center-align {
+  text-align: center;
+}
 
+.left-align {
+  text-align: left;
+  margin-left: 1em;
+}
+.border-left {
+
+  border-left: 1px solid white;
+}
 .inputGroupContainer {
   margin-left: 1em;
   margin-right: 1em;
@@ -78,9 +100,6 @@ display: flex;
 
 .remove-padding {
   padding: 0;
-}
-.social-icons {
-  color: white;
 }
 
 .white-background {
@@ -117,13 +136,27 @@ font-size: 1.5em;
   margin-right: 0;
 }
 
+#callUsImg {
+  width: 244px;
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ttServices {
+  max-height: 50vh;
+  width: auto;
+  margin-top: 1rem;
+}
+
 /***NAVBAR DEFAULT STYLES***/
 .navbar {
   margin-bottom: 0;
   background-color: #333;
 }
 .navbar-brand {
-  width: 20em;
+  width: 12em;
   height: auto;
   padding-top: .3em;
   padding-bottom: .3em;
@@ -147,23 +180,16 @@ font-size: 1.5em;
   color: white;
 }
 #navNav > li > a:hover {
-  color: red;
+
 }
 
-.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-  background-color: white;
-}
+.dropdown-menu.pull-left {
+    left:0;
 
-#navNav > li.dropdown.open > ul {
-  background-color: #080808;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-}
+  }
 
-#navNav > li.dropdown.open > ul > li > a {
-  margin-top: 1em;
-  text-align: center;
-  color: white;
+.dropdown-menu>li>a {
+  white-space: normal;
 }
 
 #navNav > li.dropdown.open > ul > li:hover {
@@ -171,8 +197,7 @@ font-size: 1.5em;
 }
 
 #navNav > li.dropdown.open > ul > li > a:hover {
-  color:#CC3300;
-  background-color: #080808;
+
 }
 
 .glyphicon-menu-hamburger {
@@ -182,10 +207,10 @@ font-size: 1.5em;
   margin-top: .9em;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: white;
+
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:visited {
-  background-color: white;
+
 }
 /***NAVBAR DEFAULT STYLES END***/
 
@@ -202,7 +227,7 @@ font-size: 1.5em;
 .callOutRow a {
   font-weight: 600;
   text-align: center;
-  color: black;
+  color: red;
 }
 
 .callOutRow a:hover {
@@ -226,7 +251,7 @@ font-size: 1.5em;
 
 }
 .content h1 {
-  font-size: 1.5em;
+
   font-weight: 700;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -263,10 +288,18 @@ margin-bottom: 1.5em;
 footer {
   color: white;
 }
-
-
+footer h3, p {
+  text-align: center;
+}
+footer .well-sm {
+  margin-right: 1rem;
+}
+footer .subscribe-btn {
+  margin-top: 1rem;
+}
    #map-outer {
-     height: 14em;
+  margin-top: .5rem;
+  height: 230px;
 	padding: .3em;
   margin-bottom: .3em;
 
@@ -277,14 +310,22 @@ footer {
     }
 
 #address {
-
+  margin-right: 2em;
+  text-align: center;
   display: block;
 }
 #address h2 {
-  font-size: 1.3em;
+
+  margin-top: .5em;
   font-weight: 600;
   color: white;
 }
+footer h2 {
+margin-top: 1em;
+
+font-weight: bold;
+}
+
 #address p {
   margin-top: .1em;
   margin-bottom: .1em;
@@ -301,9 +342,45 @@ footer {
 }
 .social-icons {
   color: #f5f5f5;
-padding-top: .2em;
-padding-bottom: .2em;
-padding-left: .5em;
+  padding-top: .3em;
+  padding-bottom: .2em;
+}
+
+.social-icons-footer {
+  display: block;
+  color: #f5f5f5;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: .2em;
+  margin-right: 1.5em;
+}
+
+.social-icons-footer a {
+  padding-left: 2em;
+}
+
+.footer-nav {
+  text-align: center;
+  display: block;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+.footer-nav li a {
+  color: white;
+}
+
+
+.footer-nav-sub {
+  font-size: 1em;
+  margin-top: 2em;
+  text-align: center;
+  display: block;
+
+}
+
+.footer-nav-sub li {
+  padding-left: 8px;
+  color: grey;
 }
 
 .fa-phone {
@@ -356,7 +433,7 @@ padding-left: .5em;
       padding-top: 1em;
   }
   .callOutRow h1 {
-  display: none;
+
   }
 
   .nonmobile {
@@ -384,7 +461,7 @@ padding-left: .5em;
   }
 
   .callOutRow h1 {
-  display: none;
+
   }
 
 
@@ -415,7 +492,7 @@ legend {
 
 @media only screen and (min-width : 30em) {
   .navbar-brand {
-    width: 16em;
+    width: 8em;
   }
   .callOutRow a {
     display: inline-block;;
@@ -440,7 +517,7 @@ legend {
   }
   #navNav > li.dropdown.open > ul {
     width: auto;
-    margin-top: .6em;
+    margin-top: .7em;
   }
   .navbar-brand {
     width: 10em;
@@ -466,7 +543,13 @@ legend {
 }
 
 .callOutNumber {
-  font-size: 1.5em;
+  text-align: center;
+
+}
+
+.callOutNumber a {
+font-size: 4rem;
+color: black;
 }
 
 .content {
@@ -509,7 +592,7 @@ legend {
 @media only screen and (min-width : 62em) {
 
 .navbar-brand {
-  width: 16em;
+
 }
 .navbar-brand > img {
     padding-top: 1em;
@@ -523,7 +606,7 @@ margin-top: 1.5em;
 
 @media only screen and (min-width : 68.75em) {
   .navbar-brand {
-    width: 20em;
+
   }
   #navNav > li > a {
     padding-left: 1.3em;
