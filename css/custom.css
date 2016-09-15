@@ -80,6 +80,9 @@ display: flex;
   text-align: left;
   margin-left: 1em;
 }
+.align-flex-start {
+  align-self: flex-start;
+}
 .border-left {
 
   border-left: 1px solid white;
@@ -149,6 +152,17 @@ font-size: 1.5em;
   width: auto;
   margin-top: 1rem;
 }
+#quoteImg {
+  margin-bottom: 2rem;
+}
+
+.social-review {
+  display: inline-block;
+  width: 45%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 /***NAVBAR DEFAULT STYLES***/
 .navbar {
@@ -215,9 +229,8 @@ font-size: 1.5em;
 /***NAVBAR DEFAULT STYLES END***/
 
 
-.callOutRow img {
+.full-width {
   width: 100%;
-  max-width: 560px;
   max-height: 50vh;
 }
 
