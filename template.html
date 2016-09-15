@@ -28,97 +28,100 @@
 
   <body>
     <div class="container white-background">
-      <div class="row callOutRow flex-end">
-        <div class="col-xs-12 col-sm-6">
-          <div class="flex">
+        <div class="row callOutRow flex-end">
+            <div class="col-xs-12 col-sm-6">
+              <div class="flex">
 
-          </div>
-        </div>
+                  </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 flex">
+          <div>
+            <img id="quoteImg" class="full-width" src="resources/contact2.png" alt="Free Instant Quote">
+                <form id="contact-form" method="post" action="contact.php" role="form" class="well form-horizontal">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <div class="form-group">
 
-          <div class="col-xs-12 col-sm-6 flex">
-            <img src="resources/contact2.png" alt="Free Instant Quote">
-              <form id="contact-form" method="post" action="contact.php" role="form" class="well form-horizontal">
-                  <fieldset>
-                      <!-- Form Name -->
-                      <div class="form-group">
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="name" placeholder="First & Last Name" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
 
-                          <div class="inputGroupContainer">
-                              <div class="input-group">
-                                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                  <input name="name" placeholder="First & Last Name" class="form-control" type="text">
-                              </div>
-                          </div>
-                      </div>
-                      <div class="form-group">
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                                </div>
 
-                          <div class="inputGroupContainer">
-                              <div class="input-group">
-                                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                  <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-                              </div>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
 
-                          </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="form-group">
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input name="phone" placeholder="(919)-555-5555" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <!-- Select Basic -->
 
-                          <div class="inputGroupContainer">
-                              <div class="input-group">
-                                  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                  <input name="phone" placeholder="(919)-555-5555" class="form-control" type="text">
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Text input-->
-                      <!-- Select Basic -->
+                        <div class="form-group">
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
 
-                      <div class="form-group">
-                          <div class="inputGroupContainer">
-                              <div class="input-group">
-                                  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                  <input name="zip" placeholder="Zip Code" class="form-control" type="text">
-                              </div>
-                          </div>
-                      </div>
+                        <div class="form-group">
+                            <div class="inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <textarea class="form-control" rows="2" name="message" placeholder="Services Requested"></textarea>
+                                </div>
+                            </div>
+                        </div>
 
-                      <div class="form-group">
-                          <div class="inputGroupContainer">
-                              <div class="input-group">
-                                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                  <textarea class="form-control" rows="2" name="message" placeholder="Services Requested"></textarea>
-                              </div>
-                          </div>
-                      </div>
+                        <!-- Button -->
+                        <div class="form-group">
 
-                      <!-- Button -->
-                      <div class="form-group">
+                            <div class="col-md-4">
+                                <button id="submitButton" type="submit" class="btn btn-success btn-send">Send<span class="glyphicon glyphicon-send"></span></button>
+                                <div class="successMessages"></div>
+                            </div>
+                        </div>
 
-                          <div class="col-md-4">
-                              <button id="submitButton" type="submit" class="btn btn-success btn-send">Send<span class="glyphicon glyphicon-send"></span></button>
-                              <div class="successMessages"></div>
-                          </div>
-                      </div>
-
-                  </fieldset>
-              </form>
-          </div>
-    </div>
-</div>
-
+                    </fieldset>
+                </form>
+              </div>
+                <div class="align-flex-start">
+                  <img class="social-review" src="resources/fbreview.png" alt="">
+                  <img class="social-review" src="resources/yelp.jpg" alt="">
+              </div>
+            </div>
+      </div>
+  </div>
 <footer id="footer"></footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/contact.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6rVSuFdnC_8NX3bIeWeWiUic_Hu04r2w"></script>
-<script src="js/gmaps.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6rVSuFdnC_8NX3bIeWeWiUic_Hu04r2w"></script>
+    <script src="js/gmaps.js"></script>
 
-  </body>
 
 
 

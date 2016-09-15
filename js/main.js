@@ -4,34 +4,11 @@ $(function() {
 });
 
 
+
+
 window.onload = function() {
-var location = new GMaps({
-    div: '#map',
-    lat: 35.7651663,
-    lng: -78.6292712,
-    zoom: 9
-  });
-  location.setOptions(
-    {
-      draggable: false
-    });
 
 
-  location.addMarker({
-    lat: 35.8051663,
-    lng: -78.6292712,
-    title: 'Click to see Triangle Towing Service\'s google maps page.',
-    click: function(e) {
-      var win = window.open('http://stackoverflow.com/', '_blank');
-if (win) {
-   //Browser has allowed it to be opened
-   win.focus();
-} else {
-   //Browser has blocked it
-   alert('A popup blocker has blocked this link. If you would like to visit anyways please go here www.google.com');
-}
-    }
-  });
 
 /*
   Circle = location.drawCircle({
@@ -48,6 +25,34 @@ if (win) {
 };
 
 $(document).ready(function() {
+
+  var location = new GMaps({
+      div: '#map',
+      lat: 35.7651663,
+      lng: -78.6292712,
+      zoom: 9
+    });
+    location.setOptions(
+      {
+        draggable: false
+      });
+
+
+    location.addMarker({
+      lat: 35.8051663,
+      lng: -78.6292712,
+      title: 'Click to see Triangle Towing Service\'s google maps page.',
+      click: function(e) {
+        var win = window.open('http://stackoverflow.com/', '_blank');
+  if (win) {
+     //Browser has allowed it to be opened
+     win.focus();
+  } else {
+     //Browser has blocked it
+     alert('A popup blocker has blocked this link. If you would like to visit anyways please go here www.google.com');
+  }
+      }
+    });
 
   $(".content").on("click", "#alertButton", function() {
   console.log("we clicked the alert");
