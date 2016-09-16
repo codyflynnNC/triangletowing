@@ -3,11 +3,7 @@ $(function() {
   $("#footer").load("footer.html");
 });
 
-
-
-
 window.onload = function() {
-
 
 
 /*
@@ -25,6 +21,11 @@ window.onload = function() {
 };
 
 $(document).ready(function() {
+
+  $('.whiteHover').hover(function(){
+    $(this).toggleClass('white-background');
+  });
+
 
   var location = new GMaps({
       div: '#map',
