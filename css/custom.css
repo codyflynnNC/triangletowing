@@ -9,8 +9,6 @@ p {
 }
 
 
-
-
 .margin-top2em {
   margin-top: 2em;
 }
@@ -154,6 +152,10 @@ display: flex;
 .left-align {
   text-align: left;
   margin-left: 1em;
+}
+
+.margin-top40px {
+  margin-top: 40px;
 }
 .align-flex-start {
   align-self: flex-start;
@@ -552,6 +554,16 @@ display: none;
     position: absolute;
     top: 0;
     left: 0;
+    
+  }
+  #callUsImgFixed {
+    width: 200px;
+    margin-top: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
   }
 
 }
