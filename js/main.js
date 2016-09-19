@@ -4,29 +4,6 @@ $(function() {
 });
 
 window.onload = function() {
-
-
-/*
-  Circle = location.drawCircle({
-    lat: 35.8165686,
-    lng: -78.6459253,
-    radius: 8000,  //350 meters
-    strokeColor: '#000',
-    strokeOpacity: 1,
-    strokeWeight: 2,
-    fillColor: '#EEE',
-    fillOpacity: 0.5
-  }); */
-
-};
-
-$(document).ready(function() {
-
-  $('.whiteHover').hover(function(){
-    $(this).toggleClass('white-background');
-  });
-
-
   var location = new GMaps({
       div: '#map',
       lat: 35.7651663,
@@ -54,6 +31,29 @@ $(document).ready(function() {
   }
       }
     });
+
+/*
+  Circle = location.drawCircle({
+    lat: 35.8165686,
+    lng: -78.6459253,
+    radius: 8000,  //350 meters
+    strokeColor: '#000',
+    strokeOpacity: 1,
+    strokeWeight: 2,
+    fillColor: '#EEE',
+    fillOpacity: 0.5
+  }); */
+
+};
+
+$(document).ready(function() {
+
+  $('.whiteHover').hover(function(){
+    $(this).toggleClass('white-background');
+  });
+
+
+
 
   $(".content").on("click", "#alertButton", function() {
   console.log("we clicked the alert");

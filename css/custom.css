@@ -7,11 +7,24 @@ p {
   line-height: 1.5em;
   font-size: 2rem;
 }
+
+
+
+
+.margin-top2em {
+  margin-top: 2em;
+}
+
 a {
   font-size: 2rem;
 }
 h1,h2 {
 font-size: 4rem;
+}
+
+.mdh1 {
+  font-size: 3rem;
+  margin-top: 3em;
 }
 
 h2 {
@@ -34,7 +47,9 @@ h4 {
 .white-background {
   background-color: white;
 }
-
+.bold {
+  font-weight: bold;
+}
 .services p {
   margin-top: 1em;
 }
@@ -119,11 +134,21 @@ display: flex;
 .flex-item {
   margin-bottom: 1.5em;
 }
+
+.space-around {
+  justify-content: space-around;
+}
 .black-text {
   color:black;
 }
 .center-align {
   text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .left-align {
@@ -161,6 +186,7 @@ display: flex;
 
 .row {
   margin-left: 0;
+  margin-right: 0;
 }
 .dark-background {
   background-color: #333;
@@ -190,13 +216,11 @@ font-size: 1.5em;
   margin-right: 0;
 }
 
-#callUsImg {
-  width: 244px;
-  margin-top: 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+.z99 {
+  position: relative;
+  z-index: 999;
 }
+
 
 #ttServices {
   max-height: 50vh;
@@ -279,6 +303,10 @@ font-size: 1.5em;
 }
 /***NAVBAR DEFAULT STYLES END***/
 
+
+.width100 {
+  width: 100%;
+}
 
 .full-width {
   width: 100%;
@@ -481,9 +509,14 @@ font-weight: bold;
 
 /*** END FOOTER ***/
 
-/* ===== == = === <20em (<320px) === = == ===== */
+/* ===== == = === 20em (320px) === = == ===== */
 
 @media only screen and (min-width : 10em) {
+
+.width100 {
+display: none;
+}
+
   #navNav > li.dropdown.open > ul {
     width: 100%;
   }
@@ -506,6 +539,21 @@ font-weight: bold;
   .mobile {
     display:block;
   }
+.xxshide {
+  display: none;
+}
+
+  .full-width {
+  margin-top: 4em;
+  }
+  #callUsImg {
+    width: 200px;
+    margin-top: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 }
 
 /* ===== == = === 20em (320px) === = == ===== */
@@ -550,16 +598,39 @@ legend {
   margin-left: .5em;
 }
 
+
+
 }
 
 /* ===== == = === 30em (480px) === = == ===== */
 
 @media only screen and (min-width : 30em) {
+
   .navbar-brand {
     width: 8em;
   }
   .callOutRow a {
     display: inline-block;;
+  }
+
+  .marginB2em {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+
+  .full-width {
+    width: 100%;
+    max-height: 60vh;
+  }
+
+  #callUsImg {
+    width: 244px;
+    margin-top: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
 }
@@ -575,6 +646,20 @@ legend {
 /* ===== == = === 48em (768px) ===BREAKPOINT = == ===== */
 
 @media only screen and (min-width : 48em) {
+
+
+.width100 {
+  width: 100%;
+  display: block;
+}
+  .xxshide {
+    display: block;
+  }
+    .marginLRB5em {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
 
   .navbar-brand > img {
       padding-top: 1.7em;
