@@ -8,7 +8,7 @@ $(window).scroll(function(e){
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > 200 ){
     $('#callUsImg').css({'display': 'none'});
-    $('#callUsImgFixed').css({'display': 'block','position': 'fixed', 'top': '0px', 'left' : '80px', 'background-color' : 'rgba( 0, 0, 0, 1)', 'border-radius':'15px'});
+    $('#callUsImgFixed').css({'display': 'block','position': 'fixed', 'top': '0px', 'left' : '10px', 'background-color' : 'rgba( 0, 0, 0, .8)', 'border-radius':'15px'});
     $('#callUsImgFixed').addClass("animated bounceInRight");
   }
 

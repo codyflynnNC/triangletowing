@@ -325,7 +325,7 @@ font-size: 1.5em;
 }
 
 .callOutRow a:hover {
-  text-decoration: none;
+
   color:red;
 }
 .content p {
@@ -554,17 +554,20 @@ display: none;
     position: absolute;
     top: 0;
     left: 0;
-    
+
   }
   #callUsImgFixed {
     width: 200px;
     margin-top: 1rem;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -200px;
     z-index: 9999999;
     display: none;
   }
+
+
+
 
 }
 
