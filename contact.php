@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'Demo contact form <leads@triangletowing.com>';
+$from = 'Contact Form <leads@triangletowingservice.com>';
 $sendTo = 'Demo contact form <codyflynn2016@gmail.com>';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'zip' => 'Zip', 'message' => 'Message'); // array variable name => Text to appear in email
