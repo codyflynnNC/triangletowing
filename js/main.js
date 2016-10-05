@@ -21,7 +21,7 @@ $(window).scroll(function(e){
 
 
 
-window.onload = function() {
+googlemaploader = function() {
   var location = new GMaps({
       div: '#map',
       lat: 35.7651663,
