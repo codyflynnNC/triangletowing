@@ -13,6 +13,7 @@ p {
   margin-top: 2em;
 }
 
+
 a {
   font-size: 2rem;
 }
@@ -37,6 +38,13 @@ h4 {
   margin-top: 1em;
   font-weight: bold;
   text-align: center;
+}
+article ol {
+  font-size: 2em;
+}
+
+.article-content {
+  margin: 2em;
 }
 
 .grey-background {
@@ -151,7 +159,7 @@ display: flex;
 
 .left-align {
   text-align: left;
-  margin-left: 1em;
+
 }
 
 .margin-top40px {
@@ -385,7 +393,7 @@ margin-bottom: 1.5em;
 footer {
   color: white;
 }
-footer h3, p {
+footer h3, footer p {
   text-align: center;
 }
 footer .well-sm {
