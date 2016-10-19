@@ -8,26 +8,56 @@
 
 <url>
   <loc>http://triangletowingservice.com/</loc>
-  <lastmod>2016-09-20T19:45:43+00:00</lastmod>
+  <lastmod>2016-09-20</lastmod>
 </url>
 <url>
   <loc>http://triangletowingservice.com/services.html</loc>
-  <lastmod>2016-09-20T14:39:00+00:00</lastmod>
+  <lastmod>2016-09-20</lastmod>
 </url>
 
   <url>
     <loc>http://triangletowingservice.com/roadsideassistance.html</loc>
-    <lastmod>2016-09-20T18:30:36+00:00</lastmod>
+    <lastmod>2016-09-20</lastmod>
   </url>
 
   <url>
   <loc>http://triangletowingservice.com/contact.html</loc>
-  <lastmod>2016-09-20T18:30:36+00:00</lastmod>
+  <lastmod>2016-09-20</lastmod>
   </url>
 
   <url>
   <loc>http://triangletowingservice.com/legal.html</loc>
-  <lastmod>2016-09-20T18:30:36+00:00</lastmod>
+  <lastmod>2016-09-20</lastmod>
 </url>
+
+<url>
+<loc>http://triangletowingservice.com/blog.php</loc>
+  <lastmod>2016-10-06</lastmod>
+</url>
+
+<url>
+<loc>http://triangletowingservice.com/blog.php?id=5</loc>
+  <lastmod>2016-10-06</lastmod>
+</url>
+
+
+<url>
+<loc>http://triangletowingservice.com/blog.php?id=2</loc>
+  <lastmod>2016-10-06</lastmod>
+</url>
+
+
+<url>
+<loc>http://triangletowingservice.com/blog.php?id=1</loc>
+  <lastmod>2016-10-06</lastmod>
+</url>
+
+<url>
+<loc>http://triangletowingservice.com/blog.php?id=11</loc>
+  <lastmod>2016-10-16</lastmod>
+</url>
+
+
+
 
 </urlset>

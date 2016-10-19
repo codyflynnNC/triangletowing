@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>TriangleTowing</title>
+  <link>http://triangletowingservice.com</link>
+  <description>24/7 Tow Truck and Recovery Service in Raleigh, NC. Deploying the fastest and most reliable fleet in Raleigh. Contact a professional today 919-545-1548</description>
+  <atom:link href="http://triangletowingservice.com" rel="self" type="application/rss+xml" />
+  <image>
+      <title>TriangleTowing</title>
+      <url>http://triangletowingservice.com/resources/tow-truck-red.jpg</url>
+      <link>http://triangletowingservice.com</link>
+  </image>
+  <item>
+      <guid isPermaLink="false">triangletowingservice-blog-31</guid>
+      <title>5 Ways To Avoid Towing Scams</title>
+      <link>http://triangletowingservice.com/avoidtowingscams.html</link>
+      <description>
+        <![CDATA[
+        Don't be scammed again. Knowledge is power. <br>
+     <img src="http://triangletowingservice.com/resources/Fraud1.jpg" alt="" /> ]]>
+      </description>
+  </item>
+
+  <item>
+      <guid isPermaLink="false">triangletowingservice-blog-28</guid>
+      <title>5 Tow Truck Facts You Might Not Know</title>
+      <link>http://triangletowingservice.com/3towtruck-facts-new.html</link>
+      <description>
+        <![CDATA[
+        Newest Article from TriangleTowings Blog <br>
+     <img src="http://triangletowingservice.com/resources/tow-truck-red1.jpg" alt="" /> ]]>
+      </description>
+  </item>
+</channel>
+</rss>

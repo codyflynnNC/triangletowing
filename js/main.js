@@ -1,6 +1,6 @@
 $(function() {
   $("#header").load("header.html");
-  $("#footer").load("footer.html");
+  $("#footer").load("footer.php");
 });
 
 $(window).scroll(function(e){
@@ -18,7 +18,6 @@ $(window).scroll(function(e){
     $('#callUsImg').css({'display': 'block'});
   }
 });
-
 
 
 googlemaploader = function() {
@@ -65,6 +64,8 @@ googlemaploader = function() {
 };
 
 $(document).ready(function() {
+
+
 
   $('.whiteHover').hover(function(){
     $(this).toggleClass('white-background');
